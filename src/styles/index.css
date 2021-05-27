@@ -12,6 +12,16 @@
   .gray-box {
     background-color: #a6a6a6;
   }
+  .overlap {
+    grid-area: overlap;
+  }
+  .text-shadow {
+    filter: drop-shadow(0px 7px 4px rgba(0,0,0,0.22));
+  }
+  figure.text-shadow > div:first-of-type {
+    filter: drop-shadow(0px 7px 4px rgba(0,0,0,0.22));
+    z-index: 100;
+  }
 }
 
 body {
