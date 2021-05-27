@@ -15,8 +15,12 @@ module.exports = {
     },
 
     extend: {
+       height: {
+         '5/3': '167%',
+       },
       screens: {
-        "3xl": "1920px",
+        "3xl": "1705px",
+        "4xl": "1920px",
       },
       colors: {
         primary: {
