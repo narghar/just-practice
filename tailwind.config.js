@@ -25,6 +25,7 @@ module.exports = {
         colormenu: "#848484",
         "menu-secondary": "#505050",
         darkgray: "#363636",
+        lightgray: "#787878",
       },
       fontSize: {
         md: "17px",
@@ -33,7 +34,7 @@ module.exports = {
       },
       width: {
         "7/10": "70%",
-        "9/10": "90%"
+        "9/10": "90%",
       },
       maxWidth: {
         "1/3": "33%",
