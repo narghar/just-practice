@@ -12,7 +12,7 @@ const cards = [
     subheading: [
       <p>
         K<span>[</span>RE<span>]</span>ATYWNIE
-      </p>,
+      </p>
     ],
   },
   {
@@ -25,7 +25,7 @@ const cards = [
     subheading: [
       <p>
         K<span>[</span>RE<span>]</span>ACJA
-      </p>,
+      </p>
     ],
   },
   {
@@ -38,7 +38,7 @@ const cards = [
     subheading: [
       <p>
         K<span>[</span>RE<span>]</span>ACT.JS
-      </p>,
+      </p>
     ],
   },
   {
@@ -51,7 +51,7 @@ const cards = [
     subheading: [
       <p>
         K<span>[</span>RE<span>]</span>ATYWNIE
-      </p>,
+      </p>
     ],
   },
   {
@@ -64,7 +64,7 @@ const cards = [
     subheading: [
       <p>
         K<span>[</span>RE<span>]</span>ACJA
-      </p>,
+      </p>
     ],
   },
   {
@@ -75,9 +75,9 @@ const cards = [
     height: "477",
     heading: "Telemarketer",
     subheading: [
-      <p>
-        K<span>[</span>RE<span>]</span>ACT.JS
-      </p>,
+    <p>
+      K<span>[</span>RE<span>]</span>ACT.JS
+    </p>
     ],
   },
 ];
@@ -88,15 +88,15 @@ export default function Career() {
     <div>
       <section className="container max-w-base mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4  gap-y-2 justify-items-center">
-          {cards.map((card) => (
+          {cards.map((card, i) => (
             <Card
               imgSrc={card.imgSrc}
               alt={card.alt}
               width={card.width}
               height={card.height}
               heading={card.heading}
-              subheading={card.subheading}
-              id={card.id}
+              subheading={card.subheading[0]}
+              key={i}
             />
           ))}
         </div>
