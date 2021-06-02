@@ -4,6 +4,10 @@ module.exports = {
   purge: ["./src/**/*.js", "./pages/**/*.js"],
   theme: {
     extend: {
+      inset: {
+        "3/20": "15%",
+        "-thirteen": "-13%",
+      },
       transitionDelay: {
         0: "0ms",
       },
@@ -26,6 +30,7 @@ module.exports = {
         "menu-secondary": "#505050",
         darkgray: "#363636",
         lightgray: "#787878",
+        silver: "#a6a6a6",
       },
       fontSize: {
         md: "17px",
