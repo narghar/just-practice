@@ -171,6 +171,35 @@
 
 
 @layer utilities {
+
+    input.checkbox {
+        opacity: 0;
+        position: absolute;
+        left: -9999px;
+    }
+
+    input.checkbox + label span {
+        background-color: #fff;
+        border: 1px solid #1d1d1b;
+        display: inline-block;
+        flex: none;
+        margin-right: 16px;
+
+        position: relative;
+    }
+
+    input.checkbox:checked + label span::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 14px;
+        height: 14px;
+        padding: 7px;
+        background-color: #fbe80c;
+    }
+
     @variants responsive {
         .line-clamp-1 {
             display: -webkit-box !important;
